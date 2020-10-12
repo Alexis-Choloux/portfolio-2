@@ -11,14 +11,103 @@
 */
 
 /* COLORS
-
+    h1 - Black or wight
 */
 
 /* CSS DIRECTORY
-    1. HEADER
+    1. NAVBAR
     2. HOME
+    - text transformation
     3. PORTFOLIO
     4. PRESENTATION
     5. CONTACT
     6. FOOTER
 */
+
+/* HOME 
+===============================*/
+nav {
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    font-family: 'Righteous', sans-serif;
+    color: #e7c997;
+    font-size: 50px;
+}
+
+#navbarNav ul li a {
+    color: #e7c997;
+}
+
+nav div ul li {
+    font-size: 25px;
+    margin-right: 13vh;
+}
+
+header {
+    background-image: url(../images/Background\ Image\ Home.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background position: center;
+}
+
+
+/* HOME
+========================= */
+#home {
+    text-align: right;
+    margin-top: 10vh;
+}
+
+#home h2 {
+    font-size: 15vh;
+    margin-bottom: 8vh;
+}
+
+#pratique {
+    font-family: 'Righteous', sans-serif;
+    margin-right: 2vh;
+}
+
+#atypique {
+    font-family: 'MuseoModerno';
+    margin-right: 4vh;
+}
+
+#magnifique {
+    font-family: 'Sansita Swashed';
+    margin-right: 6vh;
+}
+
+/* text transformation */
+#pratique:hover span {
+    display: none;
+}
+#pratique:hover:before {
+    content: "Useful";
+    color: rgba(0, 0, 0, 0.411);
+}
+
+#atypique:hover span {
+    display: none;
+}
+#atypique:hover:before {
+    content: "Atypical";
+    color: rgba(0, 0, 0, 0.411);
+}
+
+#magnifique:hover span {
+    display: none;
+}
+#magnifique:hover:before {
+    content: "Magnificient";
+    color: rgba(0, 0, 0, 0.411);
+}
+
+#Logo {
+    text-align: center;
+    margin-top: -13vh;
+    color: rgba(165, 42, 42, 0.705);
+}
