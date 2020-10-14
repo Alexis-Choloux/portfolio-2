@@ -195,6 +195,10 @@ header {
     width: 50%;
 }
 
+.presentationContent {
+    margin-bottom: 5vh;
+}
+
 #picture {
     margin-left: 20vh;
 }
@@ -206,4 +210,16 @@ header {
 
 #hand {
     margin-left: 8vh;
+}
+
+#backgroundContent {
+    box-sizing: border-box;
+    width: 80%;
+}
+
+#backgroundContentRight {
+    overflow-y: scroll;
+    position: relative;
+    height: 41vh;
+    border: solid #e7c997 1px;
 }
