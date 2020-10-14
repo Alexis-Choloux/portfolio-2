@@ -3,85 +3,290 @@
 <html lang="fr">
 
 <head>
-    <title>Alexis Choloux</title>
+  <title>Alexis Choloux</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <!-- FONTS -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Righteous&family=Varta:wght@400;700&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet"> 
+  <!-- FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Righteous&family=Varta:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
 
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="ressources/css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="ressources/css/style.css">
+  <link rel="stylesheet" href="ressources/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-    
-    <!-- ACCUEIL -->
-    <header>
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.294)">
-            <h1><a class="navbar-brand" href="#" id="logo">-AlexisCholoux-</a></h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <header>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Presentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </li>
-              </ul>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.294)">
+      <h1><a class="navbar-brand" href="#" id="logo">-AlexisCholoux-</a></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Presentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- HOME -->
+    <div class="container-fluid">
+      <div class="row" id="home">
+        <div class="col-md-12">
+          <p id="pratique"><span>Pratique</span></p>
+          <p id="atypique"><span>Atypique</span></p>
+          <p id="magnifique"><span>Magnifique</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="Logo">
+        <div class="col-md-12" id="scrollLogo">
+          <p><i class="fas fa-angle-down fa-8x"></i></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- PORTFOLIO -->
+  <section>
+    <div class="container-fluid">
+
+      <!-- title -->
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-end" id="portfolioSpinner">
+          <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-right align-items-end" id="portfolioTitle">
+          <h2>Portfolio</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- content / first line -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/l\'Art\ du\ The.png)">
+            <div class="imgTitle">
+              <h3>L'Art du thé</h3>
             </div>
-          </nav>
+          </div>
+        </div>
 
-          <!-- HOME -->
-          <div class="container-fluid">
-            <div class="row" id="home">
-              <div class="col-md-12">
-                <h2 id="pratique"><span>Pratique</span></h2>
-                <h2 id="atypique"><span>Atypique</span></h2>
-                <h2 id="magnifique"><span>Magnifique</span></h2>
-              </div>
+        <div class="col-md-4">
+          <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Portfolio\ 1.png)">
+            <div class="imgTitle">
+              <h3>First Portfolio</h3>
             </div>
+          </div>
+        </div>
 
-            <div class="row" id="Logo">
-              <div class="col-md-12" id="scrollLogo">
-                <p><i class="fas fa-angle-down fa-8x"></i></p>
+        <div class="col-md-4">
+          <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Kome\ Waza.png)">
+            <div class="imgTitle">
+              <h3>Kome Waza</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content / second line -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Profil.png)">
+            <div class="imgTitle">
+              <h3>Profil page</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Projet\ en\ cours.png)">
+            <div class="imgTitle">
+              <h3>Projet en cours</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Projet\ en\ cours.png)">
+            <div class="imgTitle">
+              <h3>Projet en cours</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content / third line / collapse -->
+      <div class="row" id="portfolioBtn">
+        <div class="col-md-12">
+          <button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Plus
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="portfolioImg"
+                    style="background-image: url(ressources/images/Portfolio/Projet\ en\ cours.png)">
+                    <div class="imgTitle">
+                      <h3>Projet en cours</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="portfolioImg"
+                    style="background-image: url(ressources/images/Portfolio/Projet\ en\ cours.png)">
+                    <div class="imgTitle">
+                      <h3>Projet en cours</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="portfolioImg"
+                    style="background-image: url(ressources/images/Portfolio/Projet\ en\ cours.png)">
+                    <div class="imgTitle">
+                      <h3>Projet en cours</h3>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-    </header>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <!-- PORTFOLIO -->
-    <section>
 
-    </section>
+  <!-- PRESENTATION -->
+  <section>
+    <div class="container-fluid">
+
+      <!-- title -->
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-end" id="portfolioSpinner">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-right align-items-end" id="portfolioTitle">
+          <h2>Présentation</h2>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="row">
+
+        <!-- skills -->
+        <div class="col-md-6">
+          <h3 class="presentationTitle m-auto">Compétences</h3>
+
+          <div class="row text-center ml-2 mt-5">
+            <div class="col-md-4">
+              <h4>HTML</h4>
+              <p style="color: #fd7e14"><i class="fab fa-html5 fa-8x"></i></p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+                  style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h4>CSS</h4>
+              <p style="color: #15aabf"><i class="fab fa-css3-alt fa-8x"></i></p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                  style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h4>Boostrap</h4>
+              <p style="color: #7952b3"><i class="fab fa-bootstrap fa-8x"></i></p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
+                  style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- about -->
+        <div class="col-md-6">
+          <h3 class="presentationTitle m-auto">A propos</h3>
+
+          <div class="row mt-5" id="picture">
+            <div class="col-md-12">
+              <button type="button" class="btn btn-white rounded-circle p-0" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="right" 
+              data-content="Bonjour, je m'appelle Alexis (comme vous l'aurez compris). Après avoir été commercial dans différents 
+              domaines pendant près de 6 ans, je me suis trouvé une passion pour le Développement Web en Full-Stack. Plus j'en apprend, mieux je me porte. 
+              Pour en savoir plus, je vous invite à me contacter. C'est ci-dessous que ça se passe !">
+                <img src="ressources/images/presentation/profil.jpg">
+              </button>
+              <p id="hand" class="mt-2 mb-2" style="color: #e7c997"><i class="far fa-hand-point-up fa-4x"></i></p>
+              <p>Cliquez sur moi pour en savoir plus !</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 </body>
 
 <!-- BOOSTRAP JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
 
 </html>
