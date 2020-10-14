@@ -22,15 +22,18 @@
   <link rel="stylesheet" href="ressources/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- FACEBOOK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0&appId=138449819762" nonce="HMAI6G8v"></script>
 </head>
 
 <body>
 
   <header>
 
-
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.294)">
+    <nav class="navbar navbar-expand-lg navbar-light p-0" style="background-color: rgba(0, 0, 0, 0.294)">
       <h1><a class="navbar-brand" href="#" id="logo">-AlexisCholoux-</a></h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +43,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="header">Accueil <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Presentation</a>
+            <a class="nav-link" href="#presentation">Presentation</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           </li>
         </ul>
@@ -70,8 +73,8 @@
 
     <div class="container">
       <div class="row" id="Logo">
-        <div class="col-md-12" id="scrollLogo">
-          <p><i class="fas fa-angle-down fa-8x"></i></p>
+        <div class="col-md-12">
+          <a href="#portfolio" id="scrollLogo"><i class="fas fa-angle-down fa-8x"></i></a>
         </div>
       </div>
     </div>
@@ -79,7 +82,7 @@
 
 
   <!-- PORTFOLIO -->
-  <section>
+  <section id="portfolio">
     <div class="container-fluid">
 
       <!-- title -->
@@ -198,7 +201,7 @@
 
 
   <!-- PRESENTATION -->
-  <section>
+  <section id="presentation">
     <div class="container-fluid">
 
       <!-- title -->
@@ -217,7 +220,7 @@
       <div class="row">
 
         <!-- skills -->
-        <div class="col-md-6 presentationContent">
+        <div class="col-md-12 mt-3 presentationContent">
           <h3 class="presentationTitle m-auto">Compétences</h3>
 
           <div class="row text-center ml-2 mt-5">
@@ -249,18 +252,20 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- about -->
-        <div class="col-md-6">
+      <!-- about -->
+      <div class="row">
+        <div class="col-md-12">
           <h3 class="presentationTitle m-auto">A propos</h3>
 
           <div class="row mt-5 presentationContent" id="picture">
             <div class="col-md-12">
               <button type="button" class="btn btn-white rounded-circle p-0" data-container="body" data-toggle="popover"
                 data-placement="right"
-                data-content="Bonjour, je m'appelle Alexis (comme vous l'aurez compris). Après avoir été commercial dans différents 
-              domaines, pendant près de 6 ans, je me suis trouvé une passion pour le Développement Web en Full-Stack. Plus j'en apprend, mieux je me porte. 
-              Pour en savoir plus, je vous invite à suivre mon parcours et/ou à me contacter. C'est ci-dessous que ça se passe !">
+                data-content="Bonjour, je m'appelle Alexis (comme vous l'aurez compris). Après avoir été commercial pendant près de 6 ans,
+                dans différents domaines, je me suis trouvé une passion pour le Développement Web en Full-Stack. Plus j'en apprends, mieux je me porte ! 
+                Pour en savoir plus, je vous invite à suivre mon parcours, et/ou à me contacter. C'est 'ci-dessous' que ça se passe. A bientôt !">
                 <img src="ressources/images/presentation/profil.jpg">
               </button>
               <p id="hand" class="mt-2 mb-2" style="color: #e7c997"><i class="far fa-hand-point-up fa-4x"></i></p>
@@ -273,17 +278,19 @@
       <!-- background -->
       <div class="row mb-5">
         <div class="col-md-12">
-          <h3 class="presentationTitle m-auto presentationContent">Parcours</h3>
+          <h3 class="presentationTitle m-auto">Parcours</h3>
         </div>
       </div>
 
-      <div class="row m-auto" id="backgroundContent">
+      <div class="row m-auto presentationContent" id="backgroundContent">
         <div class="col-4">
           <div id="list-year" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">2020 - Certificat "Développeur Web et Web Mobile"</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-1">2020 - Certificat "Développeur Web et
+              Web Mobile"</a>
             <a class="list-group-item list-group-item-action" href="#list-item-2">2019 - Bilan de compétences</a>
             <a class="list-group-item list-group-item-action" href="#list-item-3">2017-2020 - Commercial</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">2015-2017 - Commercial en freelance</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">2015-2017 - Commercial en
+              freelance</a>
             <a class="list-group-item list-group-item-action" href="#list-item-5">2014 - Stage linguistique</a>
             <a class="list-group-item list-group-item-action" href="#list-item-6">2013 - BTS NRC</a>
             <a class="list-group-item list-group-item-action" href="#list-item-7">2011 - Bac Pro Commerce</a>
@@ -294,40 +301,47 @@
         <div class="col-8" id="backgroundContentRight">
           <div data-spy="scroll" data-target="#list-year" data-offset="0" class="scrollspy-example">
             <h4 id="list-item-1">2020 (en cours) - Certificat "Développeur Web et Web Mobile"</h4>
-            <p>Formation labellisée Grande Ecole du Numérique / Titre Professionnel niveau 5  inscrit au RNCP
-              / Références : Certif' Info 100809 - RNCP 31114 / Organisme ARINFO : Qualifié ISQ-OPQF, référencé au Datadock<br>
-              <br/>
-              <strong>Développer la partie front-end web/web mobile en intégrant les recommandations de sécurité</strong><br>
+            <p>Formation labellisée Grande Ecole du Numérique / Titre Professionnel niveau 5 inscrit au RNCP
+              / Références : Certif' Info 100809 - RNCP 31114 / Organisme ARINFO : Qualifié ISQ-OPQF, référencé au
+              Datadock<br>
+              <br />
+              <strong>Développer la partie front-end web/web mobile en intégrant les recommandations de
+                sécurité</strong><br>
               . Maquetter une application.<br>
               . Réaliser une interface utilisateur web statique et adaptable.<br>
               . Développer une interface utilisateur web dynamique.<br>
               . Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce.<br>
-              <br/>
-              <strong>Développer la partie back-end web/web mobile en intégrant les recommandations de sécurité</strong><br>
+              <br />
+              <strong>Développer la partie back-end web/web mobile en intégrant les recommandations de
+                sécurité</strong><br>
               . Créer une base de données.<br>
               . Développer les composants d'accès aux données.<br>
               . Développer la partie back-end d'une application web ou web mobile.<br>
               . Elaborer et mettre en œuvre des composants dans une application de gestion de contenu ou e-commerce.<br>
-              <br/>
+              <br />
               <strong>Languages</strong><br>
               . HTML-CSS / Saas / Bootstrap / Javascript/ jQuery / Ajax, PHP, MySQL<br>
-              <br/>
+              <br />
               <strong>Serveurs</strong><br>
               . Hébergement de site web (serveur dédié LEMP, Plesk) / Ligne de commande SSH<br>
-              <br/>
+              <br />
               <strong>CMS</strong><br>
               . Wordpress, Joomla, Prestashop<br>
-              <br/>
+              <br />
               <strong>Développeur Mobile Ionic</strong><br>
               . Amazon AWS EC2, S3 / ES6, TypeScript, Grunt, Mocha TDD / Ionic, Cordova, Android Studio, Xcode<br>
-              <br/>
+              <br />
               <strong>Autre</strong><br>
-              . Gestion de projet Web / Méthode Scrum Agile / Bases Photoshop/Illustrator orienté web / FrontEnd JS Angular / BackEnd JS Node
+              . Gestion de projet Web / Méthode Scrum Agile / Bases Photoshop/Illustrator orienté web / FrontEnd JS
+              Angular / BackEnd JS Node
             </p>
             <h4 id="list-item-2">2019 - Bilan de compétences</h4>
-            <p>Alors que le métier de commercial m'a permis d'améliorer mon relationnel, mon esprit d'analyse et ma rigueur, je sentais qu'il 
-              manquait une certaine créativité au métier que j'exerçais. Ayant toujours eu une véritable passion pour l'informatique et les métiers du web,
-              ce bilan de compétences très complet m'a permis d'envisager une renconversion professionnelle vers le métier pour lequel je suis fait : le développement web !
+            <p>Alors que le métier de commercial m'a permis d'améliorer mon relationnel, mon esprit d'analyse et ma
+              rigueur, je sentais qu'il
+              manquait une certaine créativité au métier que j'exerçais. Ayant toujours eu une véritable passion pour
+              l'informatique et les métiers du web,
+              ce bilan de compétences très complet m'a permis d'envisager une renconversion professionnelle vers le
+              métier pour lequel je suis fait : le développement web !
             </p>
             <h4 id="list-item-3">2017-2020 - Commercial chez Pomona Episaveurs</h4>
             <p>. Analyse des besoins<br>
@@ -335,22 +349,26 @@
               . Presentations de projets et de résultats lors de réunions<br>
               . Support auprès de collègues (via système de parrainage)<br>
               . Veille (nouveaux produits et services réguliers au sein de l'entreprise)<br>
-              . Apprentissage régulier des nouvelles techniques de ventes, conseils, et fidélisation, via des formations régulières (1/trimestre) de plusieurs jours.
+              . Apprentissage régulier des nouvelles techniques de ventes, conseils, et fidélisation, via des formations
+              régulières (1/trimestre) de plusieurs jours.
             </p>
             <h4 id="list-item-4">2015-2017 - Commercial en freelance (indépendant)</h4>
-            <p>Activité réalisée en étant associé à un studio de production, proposant des créations à destinations des radios francophones<br>
-              <br/>
+            <p>Activité réalisée en étant associé à un studio de production, proposant des créations à destinations des
+              radios francophones<br>
+              <br />
               . Autonomie (par l'activité professionnelle et la gestion de l'auto-entreprise)<br>
               . Gestion Marketing<br>
               . Conception et développement de publicités<br>
               . Tests et productions d'offres et services<br>
               . Création et gestion de fichiers prospects<br>
               . Rédactions de chroniques radios, spots publicitaires, communiqués, ...et cetera.<br>
-              . Télétravails et visioconférences constant (les radios francophones étant basées en France, Belgique, Nouvelle-Calédonie, Suisse, Canada,...)
+              . Télétravails et visioconférences constant (les radios francophones étant basées en France, Belgique,
+              Nouvelle-Calédonie, Suisse, Canada,...)
             </p>
             <h4 id="list-item-5">2014 - Stage linguistique en Angleterre</h4>
-            <p>Réalisée en intégrant une université de langue, dans un premier temps, puis une entreprise en tant que vendeur<br>
-              <br/>
+            <p>Réalisée en intégrant une université de langue, dans un premier temps, puis une entreprise en tant que
+              vendeur<br>
+              <br />
               . Très bon niveau d'anglais (je pratique toujours)<br>
               . Autonomie<br>
               . Capacité d'adaptation<br>
@@ -358,7 +376,7 @@
             </p>
             <h4 id="list-item-6">2013 - BTS NRC</h4>
             <p>Obtention du BTS Négociation et Relation Client<br>
-              <br/>
+              <br />
               . Réalisation d'études de marché <br>
               . Analyse de l'activité commerciale et de la politique d'entreprise<br>
               . Communication de l'entreprise et de l'image de marque<br>
@@ -377,9 +395,89 @@
         </div>
       </div>
     </div>
-    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container-fluid">
+
+      <!-- title -->
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center justify-content-end" id="portfolioSpinner">
+          <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-right align-items-end" id="portfolioTitle">
+          <h2>Contact</h2>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="row mb-5">
+
+        <!-- email -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5">
+              <h3 class="contactTitle m-auto">Pour me contacter</h3>
+            </div>
+
+            <div class="row m-auto">
+              <div class="col-md-12">
+                <div class="card" style="width: 18rem;">
+                  <img src="./ressources/images/contact/email-2151046_1920.png" class="card-img-top" alt="email me">
+                  <div class="card-body">
+                    <h5 class="card-title">Email</h5>
+                    <p class="card-text">Merci de prendre contact avec moi directement par mail ("courriel" pour les
+                      puristes).</p>
+                    <a href="mailto:alexis.choloux.pro@gmail.com&subject=Contact%20depuis%20le%20site"
+                      class="btn btn-danger">Envoyer</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- social -->
+        <div class="col-md-6 text-center">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5">
+              <h3 class="contactTitle m-auto">Social</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="fb-page mb-5" data-href="https://www.facebook.com/UniBressuire/" data-tabs="" data-width="400" data-height="" 
+              data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/UniBressuire/" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/UniBressuire/">Unicef Bressuire</a></blockquote></div>
+              
+                <div id="socialLogo">
+                  <a href=""><i class="fab fa-linkedin fa-8x"></i></a>
+                  <a href=""><i class="fab fa-instagram fa-8x" style="color:#e30038"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>-AlexisCholoux-</h1>
+            <p>© Copyright 2020 - Alexis Choloux - Tous droits réservés</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
