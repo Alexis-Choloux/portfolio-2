@@ -191,6 +191,43 @@ header {
     color: rgba(165, 42, 42, 0.705);
 }
 
+
+/* SEASON ANIMATION
+================================ */
+#seasonAnimation1 {
+    position: fixed;
+    margin-top: -15vh;
+    margin-left: -20vh;
+    animation-name: animation1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+#seasonAnimation2 {
+    position: fixed;
+    margin-top: -15vh;
+    margin-left: -20vh;
+    animation-name: animation2;
+    animation-duration: 8s;
+    animation-delay: 1s;
+ }
+
+#seasonAnimation3 {
+    position: fixed;
+    background-color: rgb(153, 57, 34);
+    color: white;
+    border-radius: 15px;
+    width: 400px;
+    font-size: 3vh;
+    font-weight: bold;
+    margin-left: -45vh;
+    margin-top: -20vh;
+    animation-name: animation3;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+ 
+
 /* PORTFOLIO
 ========================= */
 /* title */
@@ -362,3 +399,26 @@ footer h1 {
 
     
 }
+
+@keyframes animation1 {
+    0% {left: -15vh}
+    10% {left: 25vh}
+    90% {left: 25vh}
+    100% {left: 0}
+  }
+
+  @keyframes animation2 {
+    0% {left: -15vh}
+    10% {left: -15vh}
+    20% {left: 45vh}
+    90% {left: 45vh}
+    100% {left: 0}
+  }
+
+  @keyframes animation3 {
+    0% {left: -15vh}
+    20% {left: -15vh}
+    30% {left: 48vh}
+    90% {left: 48vh}
+    100% {left: 0}
+  }
