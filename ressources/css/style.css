@@ -24,10 +24,16 @@
     4. PRESENTATION
     5. CONTACT
     6. FOOTER
+    7. MEDIA QUERIES
 */
 
 /* GENERAL
 ========================= */
+html {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
 body h2 {
     font-family: 'MuseoModerno', sans-serif;
     font-size: 8vh;
@@ -54,6 +60,27 @@ body section {
 
 /* NAVBAR 
 ===============================*/
+
+/* .navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgb(68, 68, 68);
+    background: rgba(0, 0, 0, 0.78);
+} */
+
+
+
+nav {
+    position: absolute;
+    z-index: 1000;
+}
+
 #logo {
     font-family: 'Righteous', sans-serif;
     color: #e7c997;
@@ -90,7 +117,8 @@ header {
 }
 
 #home p {
-    font-size: 15vh;
+    font-size: 13vh;
+    margin-top: 3vh;
 }
 
 #pratique {
@@ -100,12 +128,12 @@ header {
 
 #atypique {
     font-family: 'MuseoModerno';
-    margin-right: 4vh;
+    margin-right: 2vh;
 }
 
 #magnifique {
     font-family: 'Sansita Swashed';
-    margin-right: 6vh;
+    margin-right: 2vh;
 }
 
 /* text transformation */
@@ -131,6 +159,27 @@ header {
 #magnifique:hover:before {
     content: "Magnificient";
     color: rgba(0, 0, 0, 0.411);
+}
+
+/* logo transformation */
+#textLogo i {
+    margin-left: 1vh;
+}
+
+#pratique:hover i {
+    transform: translateY(-8vh);
+    transition: 2s;
+    margin-left: 10vh;
+}
+#atypique:hover i {
+    transform: translateY(-8vh);
+    transition: 2s;
+    margin-left: 10vh;
+}
+#magnifique:hover i {
+    transform: translateY(-8vh);
+    transition: 2s;
+    margin-left: 10vh;
 }
 
 #Logo {
@@ -180,6 +229,11 @@ header {
     left: 40px;
 }
 
+.portfolioImg:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
 #portfolioBtn {
     text-align: center;
     margin-bottom: 5vh;
@@ -217,6 +271,11 @@ header {
     position: relative;
     height: 41vh;
     border: solid #e7c997 1px;
+}
+
+#backgroundContentRight h4 {
+    font-weight: bold;
+    color: #e7c997;
 }
 
 
@@ -264,4 +323,42 @@ footer h1 {
     color: white;
     font-size: 50px;
     margin-top: 10vh;
+}
+
+/* MEDIA QUERIES
+============================ */
+@media screen and (max-width: 768px) {
+    #home p {
+        display: none;
+    }
+
+    #Logo {
+        margin-top: 40vh;
+    }
+
+    #portfolioSpinner {
+        margin-top: 5vh;
+    }
+
+    #portfolioTitle {
+        margin-top: -8vh;
+    }
+
+    #presentationTitle {
+        font-size: 6.5vh;
+    }
+
+    .presentationTitle {
+        width: 90%;
+    }
+
+    .backgroundContent {
+        width: 100%;
+    }
+
+    #contactTitle {
+        margin-top: 5vh;
+    }
+
+    
 }
