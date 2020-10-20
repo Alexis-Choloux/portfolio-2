@@ -117,8 +117,8 @@ header {
 }
 
 #home p {
-    font-size: 13vh;
-    margin-top: 3vh;
+    font-size: 10vh;
+    margin-top: 5vh;
 }
 
 #pratique {
@@ -141,7 +141,7 @@ header {
     display: none;
 }
 #pratique:hover:before {
-    content: "Useful";
+    content: "Web Developer";
     color: rgba(0, 0, 0, 0.411);
 }
 
@@ -149,7 +149,7 @@ header {
     display: none;
 }
 #atypique:hover:before {
-    content: "Atypical";
+    content: "Front-end";
     color: rgba(0, 0, 0, 0.411);
 }
 
@@ -157,7 +157,7 @@ header {
     display: none;
 }
 #magnifique:hover:before {
-    content: "Magnificient";
+    content: "Back-end";
     color: rgba(0, 0, 0, 0.411);
 }
 
@@ -184,7 +184,6 @@ header {
 
 #Logo {
     text-align: center;
-    margin-top: -4vh;
 }
 
 #scrollLogo {
@@ -192,12 +191,14 @@ header {
 }
 
 
+
 /* SEASON ANIMATION
 ================================ */
 #seasonAnimation1 {
     position: fixed;
-    margin-top: -15vh;
-    margin-left: -20vh;
+    z-index: 1000;
+    margin-top: -20vh;
+    margin-left: -200px;
     animation-name: animation1;
     animation-duration: 8s;
     animation-delay: 1s;
@@ -205,8 +206,9 @@ header {
 
 #seasonAnimation2 {
     position: fixed;
-    margin-top: -15vh;
-    margin-left: -20vh;
+    z-index: 1000;
+    margin-top: -20vh;
+    margin-left: -200px;
     animation-name: animation2;
     animation-duration: 8s;
     animation-delay: 1s;
@@ -214,19 +216,42 @@ header {
 
 #seasonAnimation3 {
     position: fixed;
-    background-color: rgb(153, 57, 34);
+    z-index: 1000;
+    background-color: rgb(204, 88, 60);
     color: white;
     border-radius: 15px;
     width: 400px;
     font-size: 3vh;
     font-weight: bold;
-    margin-left: -45vh;
-    margin-top: -20vh;
+    margin-left: -500px;
+    margin-top: -25vh;
     animation-name: animation3;
     animation-duration: 8s;
     animation-delay: 1s;
 }
- 
+@keyframes animation1 {
+    0% {left: 0}
+    10% {left: 220px}
+    90% {left: 220px}
+    100% {left: 0}
+  }
+
+  @keyframes animation2 {
+    0% {left: 0}
+    10% {left: 0}
+    20% {left: 400px}
+    90% {left: 400px}
+    100% {left: 0}
+  }
+
+  @keyframes animation3 {
+    0% {left: 0}
+    20% {left: 0}
+    30% {left: 500px}
+    90% {left: 500px}
+    100% {left: 0}
+  }
+
 
 /* PORTFOLIO
 ========================= */
@@ -296,6 +321,18 @@ header {
 #picture img {
     height: 200px;
     border-radius: 50%;
+}
+
+#hand {
+    position: relative;
+    animation-name: hand1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes hand1 {
+    0% {top: 0}
+    50% {top: 1.4vh}
+    100% {top: 0}
 }
 
 #backgroundContent {
@@ -399,26 +436,3 @@ footer h1 {
 
     
 }
-
-@keyframes animation1 {
-    0% {left: -15vh}
-    10% {left: 25vh}
-    90% {left: 25vh}
-    100% {left: 0}
-  }
-
-  @keyframes animation2 {
-    0% {left: -15vh}
-    10% {left: -15vh}
-    20% {left: 45vh}
-    90% {left: 45vh}
-    100% {left: 0}
-  }
-
-  @keyframes animation3 {
-    0% {left: -15vh}
-    20% {left: -15vh}
-    30% {left: 48vh}
-    90% {left: 48vh}
-    100% {left: 0}
-  }
